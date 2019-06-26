@@ -4,8 +4,8 @@ class Article < ActiveRecord::Base
   @@all =[]
 
   def initialize(title, content)
-    @title = params[:title]
-    @content = params[:content]
+    @title = params[title]
+    @content = params[content]
     @@all << self
   end
 
