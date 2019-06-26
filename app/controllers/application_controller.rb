@@ -14,5 +14,5 @@ class ApplicationController < Sinatra::Base
   get '/articles/new'
     erb :new
   end
-  
+
 end
