@@ -8,8 +8,8 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  # get '/' do
-  # end
+  get '/' do
+  end
 
   get '/articles/new'
     erb :new
@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/articles/:id' do
-    @article = Article.find(params[:id])
+  #  @article = Article.find(params[:id])
     erb :show
   end
 
